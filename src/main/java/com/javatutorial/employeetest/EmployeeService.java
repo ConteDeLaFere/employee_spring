@@ -28,7 +28,7 @@ public class EmployeeService implements EmployeeServiceInterface {
     }
 
     public Employee remove(String firstName, String lastName) {
-        Employee employee =new Employee(firstName, lastName);
+        Employee employee = new Employee(firstName, lastName);
         if (!employees.contains(employee)) {
             throw new EmployeeNotFoundException();
         }
